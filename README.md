@@ -36,7 +36,7 @@ const options: Partial<PdfBrowserOptions> = {
         //"table of contents" - this is what shows up when you click on the list button.
         {
             name: "Chapter I - General", //name
-            page: 1, //page on the pdf that the chapter is on. This is the page that TTPG expects, not necessarily the PDF's own page count.
+            page: 1, //page on the pdf that the chapter is on. This is the *actual* page of the pdf, 1-indexed (as opposed to what the pdf might have as a page number given introductions, covers, and what not)
             items: [
                 //sections within this chapter
                 {
@@ -71,3 +71,7 @@ const options: Partial<PdfBrowserOptions> = {
     }
 })(refObject);
 ```
+
+## A note on page numbers.
+
+Pages in the options (toc and index) are 1-indexed from the true start of the pdf. In contrast, PDFs might refer to the 6th (or whatever) page as page 1 internally, what with introductions and cover pages. In further contrast, TTPG uses 0-indexed pages internally (ie: the first page is "page 0" according to TTPG). I opted to use 1-indexed because it's more intuitive and what non-programmers tend to expect.
