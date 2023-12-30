@@ -2,11 +2,13 @@
 
 add this as a dependency to your ttpg environment
 
-`npm add ttpg-pdf-controls`
+```
+npm install ttpg-pdf-controls
 
-`yarn add ttpg-pdf-controls`
+yarn add ttpg-pdf-controls
 
-`pnpm add ttpg-pdf-controls`
+pnpm add ttpg-pdf-controls
+```
 
 create a new script in your ttpg project and import/require as needed (I'll assume you're using typescript and transpiling)
 
