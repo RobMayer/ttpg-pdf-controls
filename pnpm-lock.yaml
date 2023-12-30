@@ -743,6 +743,7 @@ packages:
       '@tabletop-playground/api': ^0.39.0
     dependencies:
       '@tabletop-playground/api': 0.39.0
+    dev: false
 
   /lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
