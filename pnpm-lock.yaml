@@ -4,15 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  jsx-in-ttpg:
-    specifier: ^2.2.2
-    version: 2.2.2(@tabletop-playground/api@0.39.0)
-
 devDependencies:
   '@tabletop-playground/api':
     specifier: ^0.39.0
     version: 0.39.0
+  jsx-in-ttpg:
+    specifier: ^2.2.2
+    version: 2.2.2(@tabletop-playground/api@0.39.0)
   tsup:
     specifier: ^8.0.1
     version: 8.0.1(typescript@5.3.3)
@@ -405,6 +403,7 @@ packages:
 
   /@tabletop-playground/api@0.39.0:
     resolution: {integrity: sha512-lXf0XA2EL1oNjeVnQs/JPmpymKs6HCH5HMPkugaYRMsgoLgIMo9X1oL2RoE1E1HXAnCnthCT66RAhIdgaCU6HQ==}
+    dev: true
 
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -743,7 +742,7 @@ packages:
       '@tabletop-playground/api': ^0.39.0
     dependencies:
       '@tabletop-playground/api': 0.39.0
-    dev: false
+    dev: true
 
   /lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
