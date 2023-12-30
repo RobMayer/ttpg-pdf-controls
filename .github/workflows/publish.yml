@@ -23,7 +23,7 @@ jobs:
                   registry-url: "https://registry.npmjs.org"
                   cache: "pnpm"
             - name: Install Deps
-              run: pnpm install --frozen-lockfile --no-optional
+              run: pnpm install --frozen-lockfile
               env:
                   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
             - name: Lint and Build
