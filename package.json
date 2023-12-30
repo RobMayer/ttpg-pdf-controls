@@ -1,7 +1,7 @@
 {
     "name": "ttpg-pdf-controls",
     "license": "UNLICENSE",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "scripts": {
         "build": "tsup src/index.tsx --format cjs,esm --dts --no-splitting",
@@ -23,7 +23,9 @@
         "jsx-in-ttpg": "^2.2.2"
     },
     "peerDependencies": {
-        "@tabletop-playground/api": "^0.39.0",
+        "@tabletop-playground/api": "^0.39.0"
+    },
+    "dependencies": {
         "jsx-in-ttpg": "^2.2.2"
     }
 }
